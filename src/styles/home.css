@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#homePage {
+    margin-top: 300px;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    margin-left: 8vw;
+    flex-basis: 50%;
+}
+
+#homePage .row .col h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+    font-size: 100px;
+}
+
+#homePage .row .col p {
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+#homePage .row .col button {
+    width: 10vw;
+    height: 5vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    margin-top: 3%;
+    color: #edf0f1;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 22px;
+   outline: none; 
+}
+
+#homePage .row .col .card {
+    
+}
