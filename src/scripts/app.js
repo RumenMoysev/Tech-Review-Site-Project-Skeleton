@@ -20,6 +20,12 @@ function onclickShowThemes(e) {
 
 let defaultTheme = "#1e9bff";
 
+const themeButtonColors = {
+    red: ["rgba(175, 0, 0, 1)", "rgba(175, 0, 0, 0.7)", "rgba(175, 0, 0, 0.4)"],
+    green: ["rgba(11, 116, 1, 1)", "rgba(11, 116, 1, 0.7)", "rgba(11, 116, 1, 0.4)"],
+    blue: ["rgba(0, 136, 169, 1)", "rgba(0, 136, 169, 0.7)", "rgba(0, 136, 169, 0.4)"],
+    yellow: ["rgba(199, 186, 10, 1)", "rgba(199, 186, 10, 0.7)", "rgba(199, 186, 10, 0.4)"]
+}
 
 const themeColors = {
   red: "red",
@@ -57,4 +63,7 @@ function onclickChangeTheme(e) {
     let theme = themeColors[id]
     defaultTheme = theme
     body.style.setProperty("--theme-color", defaultTheme)
+    body.style.setProperty("--button-color", themeButtonColors[id][0])
+    body.style.setProperty("--button-hover-color", themeButtonColors[id][1])
+    body.style.setProperty("--button-active-color", themeButtonColors[id][2])
 }
