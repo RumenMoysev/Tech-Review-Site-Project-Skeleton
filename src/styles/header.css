@@ -57,6 +57,7 @@ header li:not(.themePreview), header a:not(.cta), header button {
     z-index: 2;
     top: 0%;
     width: 100%;
+    /* height: 15vh; */
     transition: all 300ms ease-in-out;
 }
 
