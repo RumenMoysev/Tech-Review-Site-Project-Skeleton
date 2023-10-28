@@ -51,6 +51,8 @@
     border-bottom: 2px solid var(--theme-color);
     /* padding: 0% 10% 0% 10%; */
     margin-top: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
     transition: all 500ms ease-in-out;
 }
 
