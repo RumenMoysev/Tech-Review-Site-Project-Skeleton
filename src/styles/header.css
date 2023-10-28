@@ -21,15 +21,16 @@
 }
 
 .homeNavIcon {
-    border-radius: 35%;
-    width: 90px;
+    border-radius: 10%;
+    /* border: 2px solid rebeccapurple; */
+    width: 100px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     animation: drop 700ms ease;
 }
 
 .homeNavIcon:hover{
-    transform: scale(1.25);
+    transform: scale(1.2);
 }
 
 #body {
