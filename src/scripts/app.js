@@ -18,6 +18,13 @@ function onclickShowThemes(e) {
     }
 }
 
+const themeLogos = {
+    red: 'images/logoTred.png',
+    green: 'images/logoTgreen.png',
+    blue: 'images/logoTblue.png',
+    yellow: 'images/logoTyellow.png'
+}
+
 let defaultTheme = "#1e9bff";
 
 const themeButtonColors = {
@@ -58,6 +65,8 @@ function unHoverTheme(e) {
     changedShadow.style.setProperty("--theme-color", defaultTheme);
 }
 
+// const homeNavIcon = document.getElementById('homeNavIcon')
+
 function onclickChangeTheme(e) {
     let id = e.target.id
     let theme = themeColors[id]
@@ -66,4 +75,5 @@ function onclickChangeTheme(e) {
     body.style.setProperty("--button-color", themeButtonColors[id][0])
     body.style.setProperty("--button-hover-color", themeButtonColors[id][1])
     body.style.setProperty("--button-active-color", themeButtonColors[id][2])
+    homeNavIcon.src = themeLogos[id]
 }
